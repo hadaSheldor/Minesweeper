@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Minesweeper</title>
+  </head>
+  <body onload="init()">
+    <h1>Minesweeper</h1>
+
+    <div class="btnDiv">
+      <button onclick="reload()">🥸</button>
+    </div>
+
+    <h2>Flags: <span class="flags"></span></h2>
+    <h2>Time: <span class="timer">0</span></h2>
+
+    <div class="radioContainer">
+      <input
+        class="checkmark"
+        type="radio"
+        id="Beginner"
+        value="Beginner"
+        name="gameLevel"
+        checked
+        onclick="setGameLevel(this)"
+      />
+      <label for="Beginner" class="radio-inline">Beginner</label>
+      <input
+        class="checkmark"
+        type="radio"
+        id="Medium"
+        value="Medium"
+        name="gameLevel"
+        onclick="setGameLevel(this)"
+      />
+      <label for="Medium" class="radio-inline">Medium</label>
+      <input
+        class="checkmark"
+        type="radio"
+        id="Expert"
+        value="Expert"
+        name="gameLevel"
+        onclick="setGameLevel(this)"
+      />
+      <label for="Expert" class="radio-inline">Expert</label>
+    </div>
+    <div class="modal" hidden></div>
+
+    <div class="container">
+      <table class="board"></table>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

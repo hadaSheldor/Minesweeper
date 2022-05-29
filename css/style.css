@@ -1,0 +1,110 @@
+body {
+  background-color: #626262;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+h2 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.radioContainer {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 500px;
+}
+
+/* .radioContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+} */
+
+/* .radioContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.radioContainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.contaradioContaineriner input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+*/
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: rgb(91, 87, 87) solid 1px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c3c3c3;
+  text-align: center;
+  border-radius: 10%;
+  font-size: larger;
+}
+
+button:hover {
+  background-color: rgb(207, 204, 202);
+}
+
+table {
+  margin: auto;
+  background-color: #8c8b8b;
+}
+td {
+  margin: auto;
+  background-color: rgb(194, 187, 187);
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  border: 1px solid black;
+}
+
+.board td:hover {
+  background-color: rgb(207, 204, 202);
+}
